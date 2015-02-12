@@ -15,7 +15,7 @@ TEMPLATES_PATH = os.path.join(BASE_DIR, "saucieapp/templates")
 STATICFILES_PATH = os.path.join(BASE_DIR, "static")
 
 TEMPLATE_DIRS = (
-    TEMPLATES_PATH,
+    os.path.join(BASE_DIR, "templates"),
 )
 
 STATTICFILES_DIRS = (
@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
 )
 
 MIDDLEWARE_CLASSES = (
